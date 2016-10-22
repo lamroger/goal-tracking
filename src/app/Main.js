@@ -7,6 +7,7 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import NavigationBar from './components/NavigationBar';
 import GoalCard from './components/GoalCard';
+import DreamlineTable from './components/DreamlineTable';
 
 const styles = {
   container: {
@@ -59,10 +60,57 @@ class Main extends Component {
         <div className='main-container'> 
         <NavigationBar/>
           <div className='jumbotron col-sm-12 text-center'>
-            <div className="row">
-              <GoalCard/>
-              <GoalCard/>
-              <GoalCard/>
+
+            <div className='row'>
+              <div className='col-sm-4'>
+                <DreamlineTable
+                  title='Having'
+                  exampleLine='Audi R8'
+                />
+              </div>
+              <div className='col-sm-4'>
+                <DreamlineTable
+                  title='Cost'
+                  exampleLine='$2,003/month'
+                />
+              </div>
+              <br />
+            </div>
+            <div className='row'>
+              <div className='col-sm-4'>
+                <DreamlineTable
+                  title='Being'
+                  exampleLine='Able to play a Jazz piano piece'
+                />
+              </div>
+              <div className='col-sm-4'>
+                <DreamlineTable
+                  title='Doing'
+                  exampleLine='Practice 1 hour a week through an online course'
+                />
+              </div>
+              <div className='col-sm-4'>
+                <DreamlineTable
+                  title='Cost'
+                  exampleLine='$0'
+                />
+              </div>
+              <br/>
+            </div>
+            <div className='row'>
+              <div className='col-sm-4'>
+                <DreamlineTable
+                  title='Doing'
+                  exampleLine='Autocross in my WRX'
+                />
+              </div>
+              <div className='col-sm-4'>
+                <DreamlineTable
+                  title='Cost'
+                  exampleLine='$500'
+                />
+              </div>
+              <br/>
             </div>
           </div>
         </div>
