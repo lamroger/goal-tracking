@@ -6,3 +6,8 @@ body {
   font-size: 13px;
   line-height: 20px;
 }
+
+.top-bottom-buffer { 
+  padding-top: 15px;
+  padding-bottom: 15px; 
+}

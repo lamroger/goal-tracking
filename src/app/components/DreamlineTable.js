@@ -15,10 +15,34 @@ export default class DreamlineTable extends React.Component {
       <Card>
         <CardTitle title={this.props.title} />
         <CardText>
-          <TextField
-            hintText={this.props.exampleLine}
-            fullWidth={true}
-          />
+          <ol>
+            <li>
+              <TextField
+                hintText={this.props.exampleLine}
+                fullWidth={true}
+              />
+            </li>
+            <li>
+              <TextField
+                fullWidth={true}
+              />
+            </li>
+            <li>
+              <TextField
+                fullWidth={true}
+              />
+            </li>
+            <li>
+              <TextField
+                fullWidth={true}
+              />
+            </li>
+            <li>
+              <TextField
+                fullWidth={true}
+              />
+            </li>
+          </ol>
         </CardText>
       </Card>
     );
