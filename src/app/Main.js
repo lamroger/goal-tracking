@@ -68,7 +68,7 @@ class Main extends Component {
                 <TimescaleCard/> 
               </div>
             </div>
-            <div className='steps col-md-9'>
+            <div className='steps col-md-12'>
               <div className='row'>
                 <div className='col-md-4'>
                   <DreamlineTable
@@ -117,8 +117,9 @@ class Main extends Component {
                   />
                 </div>
               </div>
+              <hr/>
             </div>
-            <div className='actionItems col-md-3'>
+            <div className='actionItems col-md-12'>
               <NextStepsCard/> 
             </div>
           </div>
