@@ -33,8 +33,7 @@ export default class TimescaleCard extends React.Component {
         <DropDownMenu 
           underlineStyle={{display: 'none'}} 
           style={{
-            fontSize: '24',
-            paddingRight: '0'
+            fontSize: 24,
           }} 
           value={this.state.value} 
           onChange={this.handleChange}

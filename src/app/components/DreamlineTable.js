@@ -12,39 +12,46 @@ export default class DreamlineTable extends React.Component {
 
   render() {
     return (
-      <Card>
-        <CardTitle title={this.props.title} />
-        <CardText>
-          <ol>
-            <li>
-              <TextField
-                hintText={this.props.exampleLine}
-                fullWidth={true}
-              />
-            </li>
-            <li>
-              <TextField
-                fullWidth={true}
-              />
-            </li>
-            <li>
-              <TextField
-                fullWidth={true}
-              />
-            </li>
-            <li>
-              <TextField
-                fullWidth={true}
-              />
-            </li>
-            <li>
-              <TextField
-                fullWidth={true}
-              />
-            </li>
-          </ol>
-        </CardText>
-      </Card>
+      <div className='top-bottom-buffer'>
+        <Card>
+          <CardTitle title={this.props.title} />
+          <CardText>
+            <ol>
+              <li>
+                <TextField
+                  hintText={this.props.exampleLine}
+                  fullWidth={true}
+                  name='first'
+                />
+              </li>
+              <li>
+                <TextField
+                  fullWidth={true}
+                  name='second'
+                />
+              </li>
+              <li>
+                <TextField
+                  fullWidth={true}
+                  name='third'
+                />
+              </li>
+              <li>
+                <TextField
+                  fullWidth={true}
+                  name='fourth'
+                />
+              </li>
+              <li>
+                <TextField
+                  fullWidth={true}
+                  name='fifth'
+                />
+              </li>
+            </ol>
+          </CardText>
+        </Card>
+      </div>
     );
   }
 }
