@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
-import Dialog from 'material-ui/Dialog';
 import {deepOrange500} from 'material-ui/styles/colors';
-import FlatButton from 'material-ui/FlatButton';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import NavigationBar from './components/NavigationBar';
@@ -48,22 +45,14 @@ class Main extends Component {
   }
 
   render() {
-    const standardActions = (
-      <FlatButton
-        label="Ok"
-        primary={true}
-        onTouchTap={this.handleRequestClose}
-      />
-    );
-
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <div className='main-container'> 
           <NavigationBar
-            title='Dreamline Template'
+            title='Dreamline Worksheet'
           />
           <div className='container-fluid text-center'>
-            <div className='row top-bottom-buffer'>
+            <div className='row'>
               <div className='col-md-12'>
                 <TimescaleCard/> 
               </div>

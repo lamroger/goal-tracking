@@ -5,9 +5,11 @@ import MenuItem from 'material-ui/MenuItem';
 
 function TitleCard(props) {
   return (
-    <Card>
-      <CardTitle title={props.children} />
-    </Card>
+    <div className='top-bottom-buffer'> 
+      <Card>
+        <CardTitle title={props.children} />
+      </Card>
+    </div>
   );
 }
 
